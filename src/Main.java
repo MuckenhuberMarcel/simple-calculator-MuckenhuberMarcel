@@ -1,5 +1,8 @@
-package sample;
-
+/*
+Ersteller: Muckenhuber Marcel
+Datum: 15.10.2020
+Beschreibung: Standard Taschenrechner
+ */
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,9 +13,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/CalculatorView.fxml"));
+        primaryStage.setTitle("Simple Calculator");
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 
